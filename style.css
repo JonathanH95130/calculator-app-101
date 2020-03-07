@@ -1,5 +1,64 @@
-body {
-  margin: 20% auto;
-  width: 50%;
-  height: 75%;
+body{
+  background-color: aqua;
+  display:flex;
+  justify-content: center;
+  padding-top: 300px;
+}
+
+form {
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "first-number first-number number number"
+  "second-number second-number number2 number2"
+  "addition subtraction multiplication division"
+  "modulus clear clear equals"
+}
+
+.first-number{
+  grid-area: first-number;
+}
+
+#first-Number{
+  grid-area: number;
+}
+
+.second-number{
+  grid-area: second-number;
+}
+
+#second-Number{
+  grid-area: number2;
+}
+
+#addition{
+  grid-area: addition;
+}
+button:hover{
+  background-color:gray;
+}
+#subtraction{
+  grid-area: subtraction;
+}
+
+#multiplication{
+  grid-area: multiplication;
+}
+
+#division{
+  grid-area: division;
+}
+
+#modulus{
+  grid-area: modulus;
+}
+
+.clear{
+  grid-area: clear;
+}
+
+.equals{
+  grid-area: equals;
 }
